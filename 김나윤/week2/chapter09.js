@@ -46,4 +46,4 @@ const sorted = arr5.toSorted();
 // 배열의 모든 요소를 하나의 문자열로 합쳐서 반환하는 그런 메서드
 let arr6 = ["hi", "im", "winterlood"];
 const joined = arr6.join(" ");
-console.log(joined);
+console.log(joined); 

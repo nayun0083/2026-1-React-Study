@@ -1,6 +1,6 @@
 // 5가지 요소 순회 및 탐색 메서드
 
-// 1. forEach
+// 1. forEach 메서드
 // 모든 요소를 순회하면서, 각각의 요소에 특정 동작을 수행시키는 메서드
 let arr1 = [1, 2, 3];
 
@@ -8,7 +8,7 @@ arr1.forEach(function (item, idx, arr) {
   //   console.log(idx, item * 2);
 });
 //콜백함수
-
+// idx는 현재 요소의 값,  item은 현재 반복 카운트 ,arr은 전체 배열 갓
 
 let doubledArr = [];
 
@@ -19,7 +19,7 @@ arr1.forEach((item) => {
 // 2. includes
 // 배열에 특정 요소가 있는지 확인하는 그런 메서드
 let arr2 = [1, 2, 3];
-let isInclude = arr2.includes(10);
+let isInclude = arr2.includes(10); //false 반환
 
 // 3. indexOf
 // 특정 요소의 인덱스(위치)를 찾아서 반환하는 메서드
@@ -50,7 +50,7 @@ let index = arr3.indexOf(20);
 let arr4 = [1, 2, 3];
 const findedIndex = arr4.findIndex(
   (item) => item === 999
-);
+); // -1 반환, 만족하는 요소가 없으면 -1 반환
     
 console.log(findedIndex);
 
